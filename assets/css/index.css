@@ -1,0 +1,4 @@
+/* index.css — "barrel" file: centraliza imports */
+@import url("./base.css");
+@import url("./layout.css");
+@import url("./components.css");

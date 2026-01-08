@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Tu Nombre — Portfolio</title>
+  <meta name="description" content="Plantilla profesional de portfolio: responsive, accesible y con animaciones cuidadas." />
+  <meta name="keywords" content="portfolio, web, frontend, diseño, css, html" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tu Nombre — Portfolio" />
+  <meta property="og:description" content="Plantilla profesional de portfolio: responsive, accesible y con animaciones cuidadas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-username.github.io/portfolio-template/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tu Nombre — Portfolio" />
+  <meta name="twitter:description" content="Plantilla profesional de portfolio: responsive, accesible y con animaciones cuidadas." />
+
+  <!-- Favicon placeholders (reemplazar con tus iconos reales) -->
+  <link rel="icon" href="data:,">
+
+  <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Inicio">TuMarca</a>
+
+      <button class="icon-button nav-toggle" type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false">
+        <span class="sr-only">Abrir menú</span>
+        <!-- burger -->
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Navegación principal">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+        <button class="icon-button theme-toggle" type="button" aria-label="Cambiar tema">
+          <span class="theme-toggle__icon" aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Diseño + Desarrollo</p>
+          <h1>Hola, soy <span class="accent">Tu Nombre</span>.</h1>
+          <p class="lead">
+            Construyo experiencias web claras, rápidas y con detalle. Esta es una plantilla base lista para personalizar.
+          </p>
+
+          <div class="hero-cta">
+            <a class="button" href="#projects">Ver proyectos</a>
+            <a class="button button--ghost" href="#contact">Contactar</a>
+          </div>
+
+          <ul class="hero-meta" aria-label="Datos rápidos">
+            <li><strong>Rol:</strong> Frontend</li>
+            <li><strong>Ubicación:</strong> Madrid</li>
+            <li><strong>Disponible:</strong> Sí</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-card__glass">
+            <p class="hero-card__title">Plantilla</p>
+            <p class="hero-card__subtitle">Responsive · Accesible · Reutilizable</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-header">
+          <h2>Sobre mí</h2>
+          <p>Un resumen breve, con intención. Cuenta qué haces, para quién y cómo.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3>Bio</h3>
+            <p>
+              Escribe 4–6 líneas. Suficiente para orientar, no para aburrir. Prioriza claridad y personalidad.
+            </p>
+            <p class="muted">
+              Consejo: aporta una pequeña historia o enfoque (“me obsesiona la legibilidad”, “diseño con sistema”, etc.).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Habilidades</h3>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS Grid</li>
+              <li>Flexbox</li>
+              <li>Accesibilidad</li>
+              <li>JS</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Servicios</h3>
+            <ul class="list">
+              <li>Maquetación responsive</li>
+              <li>Componentes UI</li>
+              <li>Optimización básica</li>
+              <li>Design systems ligeros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-header">
+          <h2>Proyectos</h2>
+          <p>Una selección corta. Mejor 4 sólidos que 12 mediocres.</p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project card">
+            <div class="project-media" role="img" aria-label="Imagen de proyecto (placeholder)"></div>
+            <h3>Proyecto Uno</h3>
+            <p class="muted">Descripción en 1–2 líneas. Qué problema resuelve y qué rol tuviste.</p>
+            <div class="project-links">
+              <a class="link" href="#" aria-label="Abrir demo en vivo (placeholder)">Demo</a>
+              <a class="link" href="#" aria-label="Abrir repositorio (placeholder)">Código</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project-media" role="img" aria-label="Imagen de proyecto (placeholder)"></div>
+            <h3>Proyecto Dos</h3>
+            <p class="muted">Otra descripción concisa, con verbo y resultado.</p>
+            <div class="project-links">
+              <a class="link" href="#">Demo</a>
+              <a class="link" href="#">Código</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project-media" role="img" aria-label="Imagen de proyecto (placeholder)"></div>
+            <h3>Proyecto Tres</h3>
+            <p class="muted">Enfócalo a negocio o usuario: “reduje fricción”, “aumenté claridad”, etc.</p>
+            <div class="project-links">
+              <a class="link" href="#">Demo</a>
+              <a class="link" href="#">Código</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project-media" role="img" aria-label="Imagen de proyecto (placeholder)"></div>
+            <h3>Proyecto Cuatro</h3>
+            <p class="muted">Cierra con algo distinto: animación, interacción, enfoque visual.</p>
+            <div class="project-links">
+              <a class="link" href="#">Demo</a>
+              <a class="link" href="#">Código</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contacto</h2>
+          <p>Formulario accesible (sin backend) o enlace mailto. Aquí dejamos un formulario listo para conectar.</p>
+        </header>
+
+        <form class="form card" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="button" type="submit">Enviar</button>
+            <a class="button button--ghost" href="mailto:tuemail@ejemplo.com">O escríbeme por email</a>
+          </div>
+
+          <p class="muted small">
+            Nota: para enviar sin backend puedes conectar el <code>action</code> a Formspree u otra solución.
+          </p>
+        </form>
+
+        <div class="social">
+          <a class="link" href="#" aria-label="LinkedIn (placeholder)">LinkedIn</a>
+          <a class="link" href="#" aria-label="GitHub (placeholder)">GitHub</a>
+          <a class="link" href="#" aria-label="Instagram (placeholder)">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Tu Nombre. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a class="link" href="#top">Volver arriba</a>
+        <a class="link" href="#" aria-label="Repositorio en GitHub (placeholder)">Repositorio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>

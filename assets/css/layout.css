@@ -1,0 +1,59 @@
+/* layout.css — contenedores, grids y secciones */
+.container{
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+
+.section{
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.section-header{
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2{
+  font-size: var(--text-2xl);
+  margin: 0 0 0.25rem 0;
+}
+
+.section-header p{
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+.about-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.projects-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px){
+  .about-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 980px){
+  .projects-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 404 */
+.not-found{
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 0;
+}
